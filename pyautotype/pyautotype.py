@@ -25,7 +25,7 @@ def main():
 
 
 @click.command()
-@click.option('--time', default=1, type=int, help='Number of seconds till typing starts Default: 5.')
+@click.option('--time', default=5, type=int, help='Number of seconds till typing starts Default: 5.')
 @click.option('--file', type=click.Path(exists=True), help='The file to type out.')
 @click.option('--mode', default='humanlike',
               type=click.Choice(['humanlike', 'fast']),
